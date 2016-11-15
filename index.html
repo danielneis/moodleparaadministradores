@@ -9,50 +9,226 @@
     <link href="css/custom.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    
-     <a href="https://github.com/danielneis/moodleparaadministradores"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkmeongithub.png" alt="Fork me on GitHub"></a>
-     <div class="container">
-         
-        <h1><a id="home" href="#home">Moodle para administradores</a></h1>
-         
-        <p>O <a href="https://www.moodle.org">Moodle</a> é um Ambiente Virtual de Ensino Aprendizagem (AVEA), também conhecido como Course Management System ou Learning Management System.</p>
-        <p>O Moodle é um software livre, escrito principalmente em PHP e JavaScript. O projeto começou como trabalho de doutorado de Martin Dougiamas (ainda líder do projeto) e em 2012 completou sua primeria década de existência.</p>
-        <p>Atualmente a maior parte do desenvolvimento e da gerência do projeto é feita no Moodle HQ, sede da Moodle Pty Ltd., em Perth, na Australia. Além dos mais de 50 funcionários no Moodle HQ, a "comunidade Moodle" é formada por pessoas ao redor de todo o mundo trabalhando para universidades, escolas, governos e empresas privadas.</p>
-        <p>O portal do projeto é construído utilizando o próprio Moodle e a interação entre a comunidade se dá principalmente através dos fóruns de discussão. O principal fórum é o <a href="https://moodle.org/mod/forum/view.php?id=55">General developer forum</a>, onde são tratadas a maior parte das questões de desenvolvimento/comportamento do Moodle de forma global. Existe também um <a href="https://moodle.org/mod/forum/view.php?id=50">General problems forum</a>, assim como fóruns para discussão de usabilidade, pedagogia e filosofia, para cada plugin que integra a distribuição padrão, fóruns de comunidades de <a href="https://moodle.org/course/category.php?id=3">outros países em diversos idiomas</a> (incluindo a comunidade <a href="https://moodle.org/course/view.php?id=35">brasileira</a>) e <a href="https://moodle.org/course/view.php?id=5">vários outros</a>.</p>
 
-        <img src="img/moodle.org.home.png" alt="Página inicial do Moodle.org" class="thumbnail"/>
+    <a href="https://github.com/danielneis/moodleparaadministradores"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkmeongithub.png" alt="Fork me on GitHub"></a>
+    <div class="container">
 
-        <p>Além dos fóruns, o Moodle conta também com um <a href="https://tracker.moodle.org">Bug Tracker</a> para gerenciar os bugs e contribuições relativas a código-fonte; uma <a href="https://docs.moodle.org">Wiki Oficial</a> com documentação cada vez mais ampla detalhada, para todo tipo de usuário, seja administrador, professor, aluno ou desenvolvedor; e uma <a href="https://lang.moodle.org">ferramenta para tradução</a>.</p>
+      <h1><a id="home" href="#home">Moodle para administradores</a></h1>
 
-        <h2>Conteúdo</h2>
-         
+      <p>O <a href="https://www.moodle.org">Moodle</a> é um Ambiente Virtual de Ensino
+ Aprendizagem (AVEA), também conhecido como Course Management System ou Learning 
+ Management System.</p>
+      <p>O Moodle é um software livre, escrito principalmente em PHP e JavaScript. O projeto
+ começou como trabalho de doutorado de Martin Dougiamas (ainda líder do projeto) e em 2012
+ completou sua primeria década de existência.</p>
+      <p>Atualmente a maior parte do desenvolvimento e da gerência do projeto é feita no Moodle HQ,
+ sede da Moodle Pty Ltd., em Perth, na Australia. Além dos mais de 50 funcionários no Moodle HQ,
+ a "comunidade Moodle" é formada por pessoas ao redor de todo o mundo trabalhando para 
+ universidades, escolas, governos e empresas privadas.</p>
+      <p>O portal do projeto é construído utilizando o próprio Moodle e a interação entre a
+ comunidade se dá principalmente através dos fóruns de discussão. O principal fórum é o
+ <a href="https://moodle.org/mod/forum/view.php?id=55">General developer forum</a>, onde são
+ tratadas a maior parte das questões de desenvolvimento/comportamento do Moodle de forma global.
+ Existe também um <a href="https://moodle.org/mod/forum/view.php?id=50">General problems forum</a>,
+ assim como fóruns para discussão de usabilidade, pedagogia e filosofia, para cada plugin que 
+ integra a distribuição padrão, fóruns de comunidades de 
+ <a href="https://moodle.org/course/category.php?id=3">outros países em diversos idiomas</a> 
+ (incluindo a comunidade <a href="https://moodle.org/course/view.php?id=35">brasileira</a>) e
+ <a href="https://moodle.org/course/view.php?id=5">vários outros</a>.</p>
+
+      <img src="img/moodle.org.home.png" alt="Página inicial do Moodle.org" class="thumbnail"/>
+
+      <p>Além dos fóruns, o Moodle conta também com um 
+ <a href="https://tracker.moodle.org">Bug Tracker</a> para gerenciar os bugs e contribuições
+ relativas a código-fonte; uma <a href="https://docs.moodle.org">Wiki Oficial</a> com documentação
+ cada vez mais ampla detalhada, para todo tipo de usuário, seja administrador, professor, aluno ou
+ desenvolvedor; e uma <a href="https://lang.moodle.org">ferramenta para tradução</a>.</p>
+
+      <h2>Conteúdo</h2>
+      <ul>
+        <li><a href="#frontpage">Construindo a página principal</a></li>
+        <li><a href="#appearance">Mudando a aparência do seu site</a></li>
+        <li><a href="#courses">Gerenciando cursos e categorias de cursos</a></li>
+        <li><a href="#users">Gerenciando usuários</a></li>
+        <li><a href="#roles">Inscrições, permissões, coortes, grupos e agrupamentos</a></li>
+        <li><a href="#enrols-groups">Inscrições, permissões, coortes, grupos e agrupamentos</a></li>
+        <li><a href="#configs">Configurações importantes</a></li>
+        <li><a href="#plugins">Os diversos tipos de plugins, como gerenciá-los e instalar novos</a></li>
+        <li><a href="#grades">Livro de notas</a></li>
+        <li><a href="#learnmore">Para aprender mais</a></li>
+      </ul>
+
+      <h2><a id="#frontpage">Construindo a página principal</a></h2>
+
+      <h2><a id="#appearance">Mudando a aparência do seu site</a></h2>
+
+      <h2><a id="#courses">Gerenciando cursos e categorias de cursos</a></h2>
+
+      <p>Para gerenciar cursos e categorias, vá em Bloco Administração > Administração do site > Cursos > Gerenciar cursos e categorias.</p>
+      <p>Esta página mostra a lista de categorias e, ao selecionar uma específica, a lista de seus cursos.</p>
+      <p>Aqui é possível criar cursos, categorias e sub-categorias, além de ordená-los e definir quais estão visíveis para os usuários e também excluir estes cursos e categorias.</p>
+
+      <h3>Criando cursos</h3>
+      <p>Por padrão, um professor não pode adicionar cursos ao Moodle. Você precisa ter as permissões de administrador ou criador de curso para isso.</p>
+      <p>Ao selecionar uma categoria, no topo da lista de cursos existe um link "Novo curso".</p>
+      <p>Acesse este link para ir para a tela de criação de curso, que será detalhada a seguir.</p>
+
+      <h4>Configurações de curso</h4>
+
+      <p>Ao criar um curso, existem diversas configurações que podem ser alteradas para deixá-lo da forma que você quer.</p>
+      <p>Todo curso tem um nome completo e um nome curto. Geralmente o nome curto é usado em listagens e na navegação, mas isso pode variar conforme o tema utilizado no Moodle.</p>
+      <p>Um curso também tem um "sumário" ou "descrição" bem como arquivos de sumário (a quantidade de arquivos em cada curso é definida pelo administrador).</p>
+
+      <h4>Formatos de curso</h4>
+
+      <p>O formato de curso define o formato de apresentação do conteúdo dentro do curso.</p>
+      <p>Tradicionalmente o Moodle trás o formato de tópicos, onde uma sessão aparece embaixo da outra, como uma grande lista.</p>
+      <p>Cada formato de curso tem suas configurações próprias, como o número de sessões, se deve exibir apenas uma ou todas as sessões de uma vez etc.</p>
+      <p>Além do formato de tópicos, é por padrão o Moodle oferece o formato de atividade única (bastante utilizado quando o curso inteiro é, por exemplo, um único pacote SCORM),
+ o formato social, que apresenta um fórum de discussão, o formato de tópico único, e o formato semanal, que é semelhante ao de tópicos mas cada sessão tras no título o primeiro e último dia da semana que aquela sessão representa.</p>
+      <p>Além desses formatos, existem muitos outros disponíveis na <a href="https://moodle.org/plugins" title="base de plugins do Moodle">base de plugins do Moodle</a>.</p>
+
+      <h4>Outras configurações de curso</h4>
+
+      <p>Além das opções vistas antes, você ainda pode definir um tema e um idioma padrão para o
+ curso (caso permitido pelo administrador), renomear os papéis, definir se o livro de notas será
+ mostrado aos estudantes, habilitar o acompanhamento de conclusão, marcar o curso com "etiquetas"
+ e definir o limite do tamanho de arquivos para upload.</p>
+
+      <h4>Inscrevendo usuários</h4>
+
+      <p>Após criar o curso, você será direcionado para a tela de inscrição de usuários.</p>
+      <p>Se você já tem usuários cadastrados no seu site, aqui você pode inscrevê-los manualmente no seu curso.</p>
+      <p>O Moodle também permite que os próprios usuários se inscrevam no seu curso. Para mais informações veja a sessão deste guia sobre <a href="#enrols">Inscrições</a>.</p>
+      <p>Depois que você inscreveu os usuários no seu cuso, ou caso não queira fazer isso agora, clique no botão "Ir para o conteúdo do curso".</p>
+
+      <h4>Criando o conteúdo do seu curso Moodle</h4>
+
+      <p>TODO!</p>
+
+      <h4>Grupos e agrupamentos</h4>
+
+      <p>TODO!</p>
+
+      <div class="alert alert-block alert-info">
+        <p>Mais sobre gerenciar cursos no Moodle</p>
         <ul>
-          <li><a href="#frontpage">Construindo a página principal</a></li>
-          <li><a href="#appearance">Mudando a aparência do seu site</a></li>
-          <li><a href="#courses">Gerenciando cursos e categorias de cursos</a></li>
-          <li><a href="#users">Gerenciando usuários</a></li>
-          <li><a href="#permissions">Inscrições, permissões, coortes, grupos e agrupamentos</a></li>
-          <li><a href="#configs">Configurações/parametrizações importantes</a></li>
-          <li><a href="#plugins">Os diversos tipos de plugins, como gerenciá-los e instalar novos</a></li>
-          <li><a href="#grades">Configuração de notas</a></li>
-          <li><a href="#learnmore">Para aprender mais</a></li>
+          <li><a href="https://docs.moodle.org/en/Course_settings">Documentação oficial sobre configurações de cursos</a></li>
+          <li><a href="https://docs.moodle.org/en/Course_formats">Documentação oficial sobre formatos de cursos</a></li>
+          <li><a href="https://docs.moodle.org/en/Adding_a_new_course">Documentação oficial em inglês sobre gerencia de cursos</a></li>
         </ul>
+      </div>
 
-        <h2><a id="#frontpage">Construindo a página principal</a></h2>
-        <h2><a id="#appearance">Mudando a aparência do seu site</a></h2>
-        <h2><a id="#courses">Gerenciando cursos e categorias de cursos</a></h2>
-        <h2><a id="#users">Gerenciando usuários</a></h2>
-        <h2><a id="#permissions">Inscrições, permissões, coortes, grupos e agrupamentos</a></h2>
-        <h2><a id="#configs">Configurações/parametrizações importantes</a></h2>
-        <h2><a id="plugins">Os diversos tipos de plugins, como gerenciá-los e instalar novos</a></h2>
-        <h2><a id="grades">Configuração de notas</a></h2>
+      <h2><a id="#users">Gerenciando usuários</a></h2>
 
-        <h2><a id="learnmore">Para aprender mais</a></h2>
+      <p>As várias tarefas relacionadas a usuários podem ser encontradas indo no Bloco Administração > Administração do site > Usuários > Contas.</p>
+
+      <p>Algumas das ações disponíveis:</p>
+      <ul>
+          <li>Mostrar lista de usuários: Na lista de usuários você pode ver mais detalhes sobre cada usuários, acessar seu perfil, suspender ou confirmar a conta, etc.</li>
+          <li>Ações em lote sobre usuários: aqui você seleciona um grupo de usuários e pode executar ações como mandar mensagem instantânea, suspender contas, etc.</li>
+          <li>Adicionar novo usuário: para adicionar manualmente um novo usuário. Para a criação de usuários a patir de sistemas externos, veja a sessão deste guia sobre <a href="#autenticacao">Autenticação</a>.</li>
+          <li>Campos personalizados de perfil: Além dos campos de perfil padrão que o Moodle oferece, você pode criar novos "Campos personalizados de perfil", e definir se devem ser obrigatórios no momento do cadastro ou não.</li>
+          <li>Coortes: Coortes são como os grupos, mas no nível de sistema. É possível "sincronizar" coortes com inscrições em cursos ou categorias.</li>
+          <li>Fazer upload de usuários: O Moodle permite que você envie uma lista de usuários no formato CSV para criar usuários e atualizar suas informações.</li>
+      </ul>
+
+      <p>Usuários podem ser adicionados ao Moodle de três formas: cada usuário pode se auto cadastrar, e confirmar seu cadastro através de um link recebido por email;
+o administrador ou outros usuários com permissão podem criar manualmente outras contas; ou os usuários podem ser cadastrados a partir de um (ou mais) sistema(s) externo(s).</p>
+
+      <div class="alert alert-block alert-info">
+        <p>Mais sobre gerenciar usuários no Moodle</p>
         <ul>
-          <li><a href="https://docs.moodle.org/en/Managing_a_Moodle_site">Documentação oficial em inglês sobre administração de ambientes Moodle</a></li>
+          <li><a href="https://docs.moodle.org/en/Add_users">Documentação oficial básica sobre gerenciar usuários</a></li>
+          <li><a href="https://docs.moodle.org/31/en/Managing_accounts">Documentação oficial sobre gerenciar contas de usuários</a></li>
+          <li><a href="https://docs.moodle.org/31/en/Accounts_FAQ">Perguntas frequentes sobre contas de usuários</a></li>
+          <li><a href="https://docs.moodle.org/en/Email-based_self-registration">Documentação oficial sobre cadastro por email</a></li>
         </ul>
+      </div>
 
-    </div>    
+      <h2><a id="roles">Papéis e permissões</a></h2>
+
+      <p>Um papel é um conjunto de permissões definidos para todo o sistema que você pode atribuir
+  a usuários em contextos específicos. O exemplo mais comum de atribuição de papel em contextos
+  são os professores e alunos em um curso.</p>
+      <p>O gerenciamento das permissões de cada papel pode ser feito acessando o bloco
+      Administração > Administraçãod o site > Usuário > Permissões > Definir papéis.
+      Este local permite adicionar papéis personalizados ou modificar os já existentes.
+      A aba "gerenciar papéis" permite que o administrador edite cada uma das cerca de 500
+      "capabilities" associadas com qualquer papel.</p>
+      <p>As "capabilities" são as diversas ações (ou grupo de ações) possíveis no Moodle. Para uma
+      dada "capability", um papel pode dar ou remover aquela permissão. Exemplos de 
+      capabilities são "enrol/manual:enrol" (que permite inscrever usuários manualmente nos cursos) e "moodle/course:view", que permite aos usuários visualizar o curso.<p>
+      <p>O Moodle ainda permite configurar quais papéis podem atribuir quais papéis para
+      outros usuários, também quais papéis podem sobrescrever permissões de outros papéis
+      (por exemplo, permitir que um aluno poste notícias no fórum de notícias) e quais papéis
+      podem "trocar de papel" (e para quais papéis podem trocar).</p>
+      <p>Além das atribuições de papel, o Moodle trabalha com o conceito de "inscrição" (enrolment).
+      Uma inscrição é o processo de tornar o usuário participante de um curso. Geralmente,
+      para cada inscrição é dado um papel para o usuário, mas isso não é necessário.</p>
+      <p>Caso seja necessário que alguns usuários acessem o curso mas não apareçam na lista de
+      participantes, é possível atribuir um papel sem inscrevê-los no curso. Isso é feito no
+      link "Outros usuários", na caixa de Administração > Administração do curso > Usuários.
+      Isto é similar à função de "hidden assignment" no Moodle 1.9. Note que nesse caso é
+      importante que a capability "moodle/course:view" seja permitida para o papel, para que os
+      usuários possam visualizar o curso.</p>
+
+      <h2><a id="enrols">Inscrições</a></h2>
+
+      <p>O Moodle permite que pessoas sejam inscritas nos cursos de várias formas.</p>
+      <p>Cada forma de inscrição é chamada "método de inscrição". Os métodos de inscrição mais
+      utilizados são a "Inscrição manual", onde, por exemplo, o professor inscreve os alunos no curso;
+      e a auto-inscrição, onde o próprio aluno faz sua inscrição no curso.</p>
+      <p>É possível também que inscrições sejam importadas de bases de dados externas e de outros 
+      sistemas como OpenLDAP e Active Directory.</p>
+      <p>Também estão disponíveis métodos de inscrição onde o aluno deve fazer um pagamento via PayPal ou PagSeguro.</p>
+
+      <h2><a id="configs">Configurações do ambiente Moodle.</a></h2>
+
+      <h3>Idiomas</h3>
+
+      <p>Configurações de idioma.</p>
+      <p>Personalizar idioma.</p>
+      <p>Pacotes de idioma.</p>
+
+      <h3 id="autenticacao">Autenticação</h3>
+
+      <h3>Métodos de inscrição</h3>
+
+      <h3>Outras configurações importantes</h3>
+      <p>Configurações de email</p>
+      <p>Modo de manutenção</p>
+      <p>Registre seu Moodle</p>
+
+      <div class="alert alert-block alert-info">
+        <p>Mais sobre configurações do ambiente Moodle</p>
+        <ul>
+          <li><a href="https://docs.moodle.org/31/en/Language">Documentação oficial sobre configurações de idioma</a><li>
+          <li><a href="https://docs.moodle.org/31/en/Managing_authentication">Documentação oficial sobre plugins de autenticação</a><li>
+          <li><a href="https://docs.moodle.org/31/en/Enrolment_plugins">Documentação oficial sobre métodos de inscrição</a><li>
+          <li><a href="https://docs.moodle.org/31/en/Server_settings">Documentação oficial sobre configurações do servidor</a><li>
+          <li><a href="https://docs.moodle.org/31/en/Admin_tools">Documentação oficial sobre ferramentas administrativas</a><li>
+        <ul>
+      <div>
+
+      <h2><a id="plugins">Os diversos tipos de plugins, como gerenciá-los e instalar novos</a></h2>
+
+      <p>TODO!! https://docs.moodle.org/31/en/Installing_plugins</p>
+
+      <h2><a id="grades">Livro de notas</a></h2>
+
+      <p>TODO!!
+
+      <h2><a id="learnmore">Para aprender mais</a></h2>
+      <ul>
+        <li><a href="https://docs.moodle.org/en/Managing_a_Moodle_site">Documentação oficial em inglês sobre administração de ambientes Moodle</a></li>
+        <li><a href="https://docs.moodle.org/31/en/Administration_FAQ">Perguntas frequentes sobre administração de ambientes Moodle</a></li>
+        <li><a href="https://www.youtube.com/moodle">Canal do Moodle no YouTube</a></li>
+        <li><a href="https://moodlebrasil.org/">Moodle Moot Brasil - Encontro presencial da comunidade Brasileira</a></li>
+      </ul>
+
+    </div>
+
     <div id="license">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="img/creativecommons.png" /></a>
       <div>"Moodle Para Administradores" é licenciado sob <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
